@@ -27,7 +27,7 @@ public class HelloWorldController {
     public static final String HOSTNAME_KEY = "hostname";
     public static final String IP_KEY = "ip";
 
-    @GetMapping(path = "/", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    @GetMapping(path = "/hello", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public Map<String, String> helloWorld() throws UnknownHostException {
         return getResponse();
     }
